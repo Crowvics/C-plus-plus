@@ -1,0 +1,6 @@
+Considerando a fórmula para o cálculo da distância entre dois pontos (x1, y1) e (x2, y2):
+
+a) Escreva uma função que receba como parâmetros as coordenadas de dois pontos e retorne a distância entre eles.
+
+b) Escreva um programa em C++(função principal) que capture do teclado as coordenadas dos 2 lados do retangulo (quadrado), 
+calcule e imprima o perímetro e a área deste retângulo (quadrado), chamando a função anterior.

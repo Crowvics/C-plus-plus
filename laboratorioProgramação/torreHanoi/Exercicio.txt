@@ -1,0 +1,26 @@
+O problema consiste numa pilha de n discos, numeradas de 1 a n, e 3 hastes (ou pilhas). O jogo funciona assim:
+
+1.um disco de número menor não pode estar debaixo de um disco maior;
+
+2.podemos retirar apenas o disco superior de uma determinada pilha.
+
+Em primeiro lugar, vamos definir as entradas e saídas. Não é difícil ver que o número de entradas é simplesmente
+ o número n de discos. Já as saídas poderão ser as mais variadas (por exemplo, uma tela de animação). Vamos adotar
+ a saída em modo texto, com instruções no seguinte formato:
+
+     Mova o disco x da haste L ate a haste M.
+
+Para facilitar as idéias, vamos chamar as hastes de:
+
+1) haste A ou haste de origem
+2) haste B ou haste auxiliar
+3) haste C ou haste de chegada
+
+Podemos resolver esse problema recursivamente, assim: se há apenas um disco, movemos ele da haste A ate a haste C.
+
+Agora suponha que você tenha n discos, com n pelo menos dois, e que você aprendeu a fazer o problema para qualquer
+ números de discos menor que n. Então, esse algoritmo diz como resolver para n+1:
+
+1) Mova os n-1 primeiros discos de A ate B;
+2) Mova o disco n de A ate C;
+3) Mova os discos da haste B ate a haste C.

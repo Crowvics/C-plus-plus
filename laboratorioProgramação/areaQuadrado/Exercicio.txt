@@ -1,0 +1,1 @@
+Fazer um programa em c++ que calcule a área de um quadrado de lado igual a 5.
